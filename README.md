@@ -4,7 +4,7 @@
 COURUBIN Michel\
 GUILLOT Antony\
 MICHELI Sébastien\
-PEY Arthur\
+PEY Arthur
 
 # Atelier 1
 
