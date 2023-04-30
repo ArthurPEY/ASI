@@ -1,10 +1,10 @@
 # ASI
 
 ## Equipe 4 :
-COURUBIN Michel
-GUILLOT Antony
-MICHELI Sébastien
-PEY Arthur
+COURUBIN Michel\
+GUILLOT Antony\
+MICHELI Sébastien\
+PEY Arthur\
 
 # Atelier 1
 
