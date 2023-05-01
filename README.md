@@ -1,7 +1,7 @@
 # ASI
 
 ## Equipe 4 :
-COURUBIN Michel\
+COURBIN Michel\
 GUILLOT Antony\
 MICHELI Sébastien\
 PEY Arthur
