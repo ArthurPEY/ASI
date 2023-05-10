@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" th:src="@{/js/header.js}"></script>
+	<link rel="stylesheet" type="text/css" href="../lib/Semantic-UI-CSS-master/semantic.min.css">
+	<link rel="stylesheet" type="text/css" media="all" href="/css/custom.css" th:href="@{/css/custom.css}" />
+    <title>inscription</title>
+</head>
+
+<body>
+	<div th:replace="fragments/header :: header"></div>
+
+    <h1 id = "inscriptionh1" >Formulaire d'inscription</h1>
+    <div class="incriptionDiv">
+
+
+      <label for="username"> Nom d'utilisateur : </label>
+
+      <input class="inscriptionInput" type="text" id="usernameInput" name="usernameInput" required>
+
+      
+      <label for="password">Mot de passe :</label>
+      <input  class="inscriptionInput" type="password" id="passwordInput" name="passwordInput" required>
+      
+      <label for="confirmPassword">Confirmez mot de passe :</label>
+      <input class="inscriptionInput" type="password" id="confirmPasswordInput" name="confirmPasswordInput" required>
+
+      
+      <button class="inscriptionInput" name = 'inscriptionsubmit' id ="inscriptionsubmit" onclick=sendInfo()>S'inscrire</button>
+
+    </div>
+</body>
+
+</html>
