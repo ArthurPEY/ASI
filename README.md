@@ -21,7 +21,9 @@ PEY Arthur
 
 ## Utilisation du site :
 ### Web statique : 
--
+- exécuter searchCard.html pour rechercher une carte
+- exécuter card.html pour voir toute les cartes
+- exécuter creatnewcard.html pour créer une carte
 
 ### Web dynamique : 
 - exécuter SpAppHero.class
