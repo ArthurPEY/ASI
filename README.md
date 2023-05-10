@@ -34,17 +34,17 @@ PEY Arthur
 # Atelier 2
 
 ## Eléments réalisés du cahier des charges :
-- création d'utilisateur possible et connexion
-- achat de cartes sur le marché
-- vente de cartes possible depuis la collection
+- Création d'utilisateur possible et connexion
+- Achat de cartes sur le marché
+- Vente de cartes possible depuis la collection
 
 
 ## Utilisation du site :
-- page de lancement : permet de se rendre sur les autres pages dans le header, ainsi de s'inscrire/se connecter
-- page d'incrisption : permet de créer un compte dont les informations seront stockées dans une base de données
-- connexion dans le header : permet de se connecter à un compte dont les données sont dans la base de données
-- si vous êtes connecté, votre argent et un bouton "Déconnexion" remplacera la partie dédiée à la connexion
-- page collection : affiche les cartes de l'utilisateur connecté, sinon n'affiche rien. Les cartes peuvent être mises en vente lorsque l'on rentre un prix de vente. 4 cartes sont placés dans la collection lors de la création d'un compte
-- page marché : affiche les cartes mises en vente et permet de les acheter si vous êtes connecté
-- page générateur : permet de créer une carte qui s'ajoute à la collection de l'utilisateur connecté
+- Page de lancement : permet de se rendre sur les autres pages dans le header, ainsi de s'inscrire/se connecter
+- Page d'incrisption : permet de créer un compte dont les informations seront stockées dans une base de données
+- Connexion dans le header : permet de se connecter à un compte dont les données sont dans la base de données
+- Ii vous êtes connecté, votre argent et un bouton "Déconnexion" remplacera la partie dédiée à la connexion
+- Page collection : affiche les cartes de l'utilisateur connecté, sinon n'affiche rien. Les cartes peuvent être mises en vente lorsque l'on rentre un prix de vente. 4 cartes sont placés dans la collection lors de la création d'un compte
+- Page marché : affiche les cartes mises en vente et permet de les acheter si vous êtes connecté
+- Page générateur : permet de créer une carte qui s'ajoute à la collection de l'utilisateur connecté
 
