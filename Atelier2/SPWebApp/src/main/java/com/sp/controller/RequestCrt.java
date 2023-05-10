@@ -28,24 +28,23 @@ import org.springframework.beans.factory.annotation.Autowired;
   	
  	@RequestMapping(value = { "/", "/index"}, method = RequestMethod.GET)
     public String Index(Model model) {
- 		model.addAttribute("myHeroList", HeroDao.getMyHeroList());
       return "card";
  	}
   	
- 	@RequestMapping(value = { "/card"}, method = RequestMethod.GET)
+ 	@RequestMapping(value = { "/collection"}, method = RequestMethod.GET)
     public String card(Model model) {
       return "card";
  	}
  	
  	
- 	@RequestMapping(value = { "/form"}, method = RequestMethod.GET)
+ 	@RequestMapping(value = { "/generateur"}, method = RequestMethod.GET)
     public String addHero(Model model) {
     	HeroFormDTO form = new HeroFormDTO();
     	model.addAttribute("form", form);
     	return "form";
  	}
  	
- 	@RequestMapping(value = { "/form"}, method = RequestMethod.POST)
+ 	@RequestMapping(value = { "/generateur"}, method = RequestMethod.POST)
     public String addHero(Model model, @ModelAttribute("form") HeroFormDTO form) {
 	  Hero p=HeroDao.addHero(form.getOwner(),form.getFamily(),form.getName(),form.getDescription(),form.getAffinity(),form.getImgUrl(),form.getHp(),form.getEnergy(),form.getAttack(),form.getDefence());
 	  model.addAttribute("myHeroList", HeroDao.getMyHeroList());
