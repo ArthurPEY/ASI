@@ -29,3 +29,22 @@ PEY Arthur
 - exécuter SpAppHero.class
 - pour voir les cartes, ourvrir le lien : localhost:8080/card 
 - pour ajouter une carte avec le formulaire, ouvrir le lien : localhost:8080/form
+
+
+# Atelier 2
+
+## Eléments réalisés du cahier des charges :
+- Création d'utilisateur possible et connexion
+- Achat de cartes sur le marché
+- Vente de cartes possible depuis la collection
+
+
+## Utilisation du site :
+- Page de lancement (page de collection) : permet de se rendre sur les autres pages dans le header, ainsi de s'inscrire/se connecter. Si l'utilisateur est connecté, on affiche les cartes de l'utilisateur, sinon n'affiche rien. Les cartes peuvent être mises en vente lorsque l'on rentre un prix de vente. 5 cartes sont placés dans la collection lors de la création d'un compte
+- Page marché : affiche les cartes mises en vente et permet de les acheter si vous êtes connecté
+- Page générateur : permet de créer une carte qui s'ajoute à la collection de l'utilisateur connecté
+- Page d'incrisption : permet de créer un compte dont les informations seront stockées dans une base de données
+- Connexion dans le header : permet de se connecter à un compte dont les données sont dans la base de données
+- Si vous êtes connecté, votre argent et un bouton "Déconnexion" remplacera la partie dédiée à la connexion 
+
+
