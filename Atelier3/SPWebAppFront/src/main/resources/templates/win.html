@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Votre victoire</title>
+  <link rel="stylesheet" type="text/css" href="http://127.0.0.1:80/front/css/stylewin.css">
+  <link rel="stylesheet" type="text/css" media="all" href="http://127.0.0.1:80/front/css/custom.css">
+  <link rel="stylesheet" type="text/css" media="all" href="http://127.0.0.1:80/front/lib/Semantic-UI-CSS-master/semantic.min.css">
+
+  <script type="text/javascript"  src="http://127.0.0.1:80/front/js/result.js"></script>
+  <script type="text/javascript"  src="http://127.0.0.1:80/front/js/header.js"></script>
+</head>
+<body onload="redirect()">
+<div th:replace="fragments/header :: header"></div>
+  <div class="container">
+    <div class="message">
+      <h1 id="msg">Vous avez gagné X !</h1>
+    </div>
+    <div class="footer">
+      <button onclick="location.href='http://127.0.0.1:80/front/room'" class="return-button">Retour au lobby</button>
+    </div>
+  </div>
+</body>
+</html>

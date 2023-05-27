@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Waiting Screen</title>
+  <link rel="stylesheet" type="text/css" href="http://127.0.0.1:80/front/css/stylewaiting.css">
+  <link rel="stylesheet" type="text/css" media="all" href="http://127.0.0.1:80/front/css/custom.css">
+  <link rel="stylesheet" type="text/css" media="all" href="http://127.0.0.1:80/front/lib/Semantic-UI-CSS-master/semantic.min.css">
+
+  <script type="text/javascript" src="http://127.0.0.1:80/front/js/attente.js" defer></script>
+  <script type="text/javascript"  src="http://127.0.0.1:80/front/js/header.js"></script>
+</head>
+<body>
+<div th:replace="fragments/header :: header"></div>
+  <div class="container">
+    <div class="header">
+      <h2>En attente d'un autre combattant</h2>
+    </div>
+    <div class="middle">
+      <img src="http://127.0.0.1/front/jpg/horloge.jpg" alt="Horloge">
+    </div>
+    <div class="footer">
+      <button class="cancel-button" onclick="goBack()">Annuler le combat</button>
+    </div>
+  </div>
+</body>
+</html>

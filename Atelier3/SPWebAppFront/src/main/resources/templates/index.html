@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+        <title>Index</title>
+
+	    <script type="text/javascript"  src="http://127.0.0.1:80/front/js/header.js"></script>
+
+		<link rel="stylesheet" type="text/css" media="all" href="http://127.0.0.1:80/front/lib/Semantic-UI-CSS-master/semantic.min.css">
+		<link rel="stylesheet" type="text/css" media="all" href="http://127.0.0.1:80/front/css/index.css">
+ 		<link rel="stylesheet" type="text/css" media="all" href="http://127.0.0.1:80/front/css/custom.css">
+
+
+    </head>
+<body>
+
+  <div th:replace="fragments/header :: header"></div>
+  <div class="button-container">
+    <div class="button" onclick="window.location.href='http://127.0.0.1:80/front/collection'">
+      <img src="http://127.0.0.1:80/front/img/collection.png">
+    </div>
+
+    <div class="button" onclick="window.location.href='http://127.0.0.1:80/front/market'">
+      <img src="http://127.0.0.1:80/front/img/market.png">
+    </div>
+  </div>
+
+  <div class="button-container">
+    <div class="button" onclick="window.location.href='http://127.0.0.1:80/front/generateur'">
+      <img src="http://127.0.0.1:80/front/img/generate.png">
+    </div>
+
+    <div class="button" onclick="window.location.href='http://127.0.0.1:80/front/room'">
+      <img src="http://127.0.0.1:80/front/img/combat.png">
+    </div>
+    
+    <div class="button" onclick="window.location.href='http://127.0.0.1:80/front/case'">
+      <img src="http://127.0.0.1:80/front/img/case.png">
+    </div>
+  </div>
+</body>
+</html>

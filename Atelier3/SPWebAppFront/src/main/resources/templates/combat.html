@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Web</title>
+  <link rel="stylesheet" type="text/css" href="http://127.0.0.1:80/front/css/stylecombat.css">
+  <link rel="stylesheet" type="text/css" href="http://127.0.0.1:80/front/css/custom.css">
+  <link rel="stylesheet" type="text/css" media="all" href="http://127.0.0.1:80/front/lib/Semantic-UI-CSS-master/semantic.min.css">
+  
+  <script type="text/javascript" src="http://127.0.0.1:80/front/js/header.js" defer></script>
+  <script type="text/javascript" src="http://127.0.0.1:80/front/js/combat.js" defer></script>
+</head>
+<body>
+	<div th:replace="fragments/header :: header"></div>
+  <div class="container">
+    <div class="left">
+      <div class="opponentName">
+        <h3 id="opponentName">Nom de votre adversaire</h3>
+      </div>
+      <div class="myName">
+        <h3 id="myName">Votre nom</h3>
+		<h1 id="myResult"></h1>
+      </div>
+    </div>
+    <div id="middle">
+      <div id="opponentCard">
+
+      </div>
+      <div id="myCard">
+
+      </div>
+    </div>
+    <div class="right">
+		<div id="opHealthBar" class="health-bar">
+		  <div id="opHealthBarFill" class="health-bar-fill"></div>
+          <span id="opHealth">100</span>
+		</div>
+
+		<div id="myHealthBar" class="health-bar">
+		  <div id="myHealthBarFill" class="health-bar-fill"></div>
+		  <span id="myHealth">100</span>
+		</div>
+
+
+    </div>
+  </div>
+
+
+	<template id="Card">
+                    <div class="column">   
+                        <div class="ui special cards">
+                            <div class="card">
+                                <div class="content">
+                                    <img class="ui avatar image" src={{image_src}}> {{family_name}}
+                                </div>
+                                <div class="image imageCard">
+                                    <div class="blurring dimmable image">
+                                        <div class="ui inverted dimmer">
+                                            <div class="content">
+                                                <div class="center">
+                                                    <div class="ui primary button">Add Friend</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img class="ui centered tiny  image" src={{image_src}}>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <span class="right floated">
+                                        <i class="icon leaf"></i>
+                                        {{affinity}}
+                                    </span>
+                                    <i class="icon id badge"></i>
+                                    {{family}}
+                                </div>
+                                <div class="extra content">
+									<div class="ui two column grid">
+									  <div class="row">
+									    <div id="hp{{ownerid}}" class="column">
+											<i class="icon heart"></i>
+                                        		{{hp}}
+										</div>
+
+									    <div class="column">
+											<i class="icon angle double right"></i>
+                                        	{{vitesse}}
+										</div>
+
+									  </div>
+										<div class="column">
+											<i class="icon hand rock outline"></i>
+                                        	{{attack}}
+										</div>
+
+										 <div class="column">
+											<i class="icon shield alternate"></i>
+                                        	{{defence}}
+										</div>
+
+								
+
+									</div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </template>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>VanillaRoulette.js</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="http://127.0.0.1:80/front/JS/vanillaRoulette.js" defer></script>
+    <script src="http://127.0.0.1:80/front/JS/case.js" defer></script>
+	<script type="text/javascript" src="http://127.0.0.1:80/front/js/header.js" defer></script>
+
+	<link rel="stylesheet" type="text/css" href="http://127.0.0.1:80/front/css/custom.css">
+	<link rel="stylesheet" type="text/css" media="all" href="http://127.0.0.1:80/front/lib/Semantic-UI-CSS-master/semantic.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:80/front/CSS/main.css">
+    <link rel="stylesheet" href="http://127.0.0.1:80/front/CSS/vanillaRoulette.min.css">
+</head>
+
+<body>
+	<div th:replace="fragments/header :: header"></div>
+    <!-- Roulette Preview -->
+    <section class="preview section flex flex-jcc">
+        <div class="preview__container container">
+
+            <div class="roulette"></div>
+
+            <div class="preview__dev">
+                <div class="preview__options">
+                    <div class="preview__controls">
+                        <a id="start" class="button button--primary">Lancer la roue ! (100$)</a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Template -->
+
+	<template id="Card">
+                    <div class="column">   
+                        <div class="ui special cards">
+                            <div class="card">
+                                <div class="content">
+                                    <div class="right floated meta"><i class="icon battery full"></i> {{energy}}</div>
+                                    <img class="ui avatar image" src={{image_src}}> {{family_name}}
+                                </div>
+                                <div class="image imageCard">
+                                    <div class="blurring dimmable image">
+                                        <div class="ui inverted dimmer">
+                                            <div class="content">
+                                                <div class="center">
+                                                    <div class="ui primary button">Add Friend</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img class="ui centered tiny  image" src={{image_src}}>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <span class="right floated">
+                                        <i class="icon leaf"></i>
+                                        {{affinity}}
+                                    </span>
+                                    <i class="icon id badge"></i>
+                                    {{family}}
+                                </div>
+                                <div class="extra content">
+									<div class="ui two column grid">
+									  <div class="row">
+									    <div id="hp{{ownerid}}" class="column">
+											<i class="icon heart"></i>
+                                        		{{hp}}
+										</div>
+
+									    <div class="column">
+											<i class="icon battery full"></i>
+                                        	{{vitesse}}
+										</div>
+
+									  </div>
+										<div class="column">
+											<i class="icon hand rock outline"></i>
+                                        	{{attack}}
+										</div>
+
+										 <div class="column">
+											<i class="icon shield alternate"></i>
+                                        	{{defence}}
+										</div>
+
+								
+
+									</div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </template>
+    
+    
+    
+
+
+
+
+
+
+</body>
+
+</html>

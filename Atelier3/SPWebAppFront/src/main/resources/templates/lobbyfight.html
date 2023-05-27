@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page de combat</title>
+  <link rel="stylesheet" type="text/css" href="http://127.0.0.1:80/front/css/stylelobby.css">
+  <link rel="stylesheet" type="text/css" media="all" href="http://127.0.0.1:80/front/css/custom.css">
+  <link rel="stylesheet" type="text/css" media="all" href="http://127.0.0.1:80/front/lib/Semantic-UI-CSS-master/semantic.min.css">
+
+  <script type="text/javascript" src="http://127.0.0.1:80/front/js/room.js" defer></script>
+  <script type="text/javascript"  src="http://127.0.0.1:80/front/js/header.js"></script>
+</head>
+<body onload="requestRoom()">
+<div th:replace="fragments/header :: header"></div>
+  <div class="container">
+    <div class="left">
+      <h2>Informations de combat</h2>
+      <table id="tableRoom">
+        <tr>
+          <th>Numéro de salle</th>
+          <th>Nom du combattant</th>
+          <th>Valeur du pari</th>
+          <th>Rejoindre le combat</th>
+        </tr>
+        <template id="roomInfo">
+          <tr>
+            <td>{{roomId}}</td>
+            <td>{{player1}}</td>
+            <td>{{mise}}</td>
+            <td><button onclick="joinRoom({{roomId}})">Rejoindre</button></td>
+          </tr>
+        </template>
+       
+        <!-- Ajoutez d'autres lignes de combat ici -->
+      </table>
+    </div>
+    <div class="right">
+      <h2>Créer un combat</h2>
+
+      <label for="username">Nom de la room :</label>
+      <input type="text" id="roomName" name="room">
+
+      <label for="bet">Pari :</label>
+      <input type="text" id="bet" name="bet">
+
+        <!-- Ajoutez d'autres options de combattant ici -->
+      </select>
+
+      <input type="submit" value="Soumettre" onclick="createRoom()">
+    </div>
+  </div>
+</body>
+</html>

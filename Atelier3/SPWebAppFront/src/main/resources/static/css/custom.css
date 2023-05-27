@@ -1,0 +1,207 @@
+html{
+    font-size: 10px
+}
+
+body{
+    font-size: 10px
+}
+
+.imageCard{
+    height: 100px;
+}
+
+.limitText{
+    text-overflow:ellipsis;
+}
+
+.ui.messageLight{
+    background: #ffffff;
+    padding: 1em 1.5em;
+    line-height: 1.4285em;
+    border-radius: .28571429rem;
+    -webkit-box-shadow: 0 0 0 1px rgba(252, 252, 252, 0.22) inset, 0 0 0 0 transparent;
+    box-shadow: 0 0 0 1px rgba(252, 252, 252, 0.22) inset, 0 0 0 0 transparent;
+}
+
+.overflowHiden{
+    overflow:  auto;
+}
+
+
+
+/* Styles Header */
+.headerClass {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+ margin-bottom: 10px;
+}
+
+.sellInput{
+  width: 5vw;
+}
+
+.siteIdentity h1 a {
+  color: #333;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.siteNavigation .nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.siteNavigation .nav li {
+  margin-right: 10px;
+}
+
+.siteNavigation .nav li a {
+  color: #333;
+  text-decoration: none;
+	font-size: 3vh;
+}
+
+#connexion, #deconnexion {
+  display: flex;
+  align-items: center;
+}
+
+#connexion .fontForm,
+#deconnexion .fontForm {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+#deconnexion p {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+#deconnexion #moneyP {
+  font-weight: bold;
+}
+
+/* Styles spécifiques à la version connectée */
+#connexion {
+  display: flex;
+}
+
+#deconnexion {
+  display: none;
+}
+
+
+/* Styles Formulaire inscription */
+#inscriptionh1 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.incriptionDiv {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.incriptionDiv label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.incriptionDiv input[type="text"],
+.incriptionDiv input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.incriptionDiv button {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.incriptionDiv button:hover {
+  background-color: #45a049;
+}
+
+/* Media Query pour la mise en page responsive */
+@media (max-width: 768px) {
+  #inscriptionh1 {
+    font-size: 20px;
+  }
+
+  .incriptionDiv input[type="text"],
+  .incriptionDiv input[type="password"] {
+    font-size: 12px;
+  }
+
+  .incriptionDiv button {
+    font-size: 14px;
+  }
+}
+
+
+
+
+/* Styles Formulaire carte */
+.field {
+  margin-bottom: 20px;
+}
+
+.field label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.field input[type="text"],
+.field select,
+.field input[type="range"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+}
+
+button.ui.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button.ui.button:hover {
+  background-color: #45a049;
+}
+
+/* Media Query pour la mise en page responsive */
+@media (max-width: 768px) {
+  .field label {
+    font-size: 14px;
+  }
+
+  .field input[type="text"],
+  .field select,
+  .field input[type="range"] {
+    font-size: 12px;
+  }
+
+  button.ui.button {
+    font-size: 14px;
+  }
+}
+
+
